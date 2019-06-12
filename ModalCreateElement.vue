@@ -6,10 +6,6 @@ export default {
       type: Boolean,
       default: false,
     },
-    message: {
-      type: String,
-      required: true,
-    },
   },
   render (createElement) {
     return (this.show) ? createElement('div', {
@@ -17,7 +13,7 @@ export default {
     }, [
       createElement('p', {
         class: 'message',
-      }, this.message),
+        }, this.$slots.default),
       createElement('button', {
         class: 'btn',
         on: {
@@ -28,7 +24,7 @@ export default {
         class: 'btn',
         on: {
           click: this.clickOkHandler,
-        }
+        },
       }, 'Ok'),
     ]) : null
   },
