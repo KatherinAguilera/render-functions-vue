@@ -1,6 +1,5 @@
 <script>
 export default {
-  // nombre del componente
   name: 'ModalCreateElement',
   props: {
     show: {
