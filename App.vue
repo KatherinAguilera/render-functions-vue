@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <button @click.prevent="toggleHandler">Toggle Modal</button>
-    <modal-create-element :show="show">
+    <!-- <modal-create-element :show="show">
       <h1>Modal title</h1>
       <p>Hello World</p>
-    </modal-create-element>
-    <!-- <modal-jsx :show="show" message="Hola Haru!"></modal-jsx> -->
+    </modal-create-element> -->
+    <modal-jsx :show="show" >
+       <h1>Modal title</h1>
+      <p>Hello con JSX</p>
+    </modal-jsx>
   </div>
 </template>
 
